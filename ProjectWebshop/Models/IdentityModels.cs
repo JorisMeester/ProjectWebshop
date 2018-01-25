@@ -29,5 +29,9 @@ namespace ProjectWebshop.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProjectWebshop.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<ProjectWebshop.Models.Category> Categories { get; set; }
     }
 }
